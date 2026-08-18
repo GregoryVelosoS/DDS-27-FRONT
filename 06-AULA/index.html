@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TABELAS -->
+    <header>
+        <h1> Tabelas top </h1>
+    </header>
+
+    <main>
+        <h2> PRODUTOS </h2>
+        <!-- TABLE =  CRIAÇÃO DA TABELA -->
+        <!-- BORDER = PROPRIEDADES DE BORDA DA TABELA -->
+        <table border="5">
+            <!-- THEAD = CABEÇALHO DA TABELA -->
+            <thead>
+                <!-- TR = CRIAÇÃO DE UMA LINHA DA TABELA -->
+                <tr>
+                    <!-- TH - COLUNA DE UM CABEÇALHO -->
+                    <th> ID </th>
+                    <th> NOME </th>
+                    <th> QUANTIDADE </th>
+                    <th> PREÇO </th>
+                    <th> CATEGORIA </th>
+                </tr>
+            </thead>
+            <!--TBODY = CORPO DA TABELA -->
+            <tbody>
+                <tr>
+                    <!-- TD = CÉLULA DA LINHA DO CORPO -->
+                    <td> 1 </td>
+                    <td> Shampoo CR7 </td>
+                    <td> 7 </td>
+                    <td> R$77 </td>
+                    <td> Beleza </td>
+                </tr>
+                <!-- tr*2>td*5 -->
+                 <tr>
+                    <td> 2 </td>
+                    <td> Monitor odyssey 27p </td>
+                    <td> 3 </td>
+                    <td> R$ Caro </td>
+                    <td> Essencial </td>
+                 </tr>
+                 <tr>
+                    <td> 3 </td>
+                    <!-- colspan = diz quantas colunas a célula vai ocupar -->
+                    <td colspan="3"> Mucilon 500g </td>
+                    <!-- rowspan = diz quantas linhas a célula vai ocupar -->
+                    <td rowspan="2"> Filhos </td>
+                 </tr>
+                 <tr>
+                    <td> 4 </td>
+                    <td> Lavador nasal </td>
+                    <td> 1 </td>
+                    <td> R$ 30 </td>
+                 </tr>
+            </tbody>
+            <!-- TFOOT - RODAPÉ DA TABELA -->
+            <tfoot>
+                <tr>
+                    <td colspan="10"> Tabela feita por: Dougras</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <p> Segue nóis </p>
+    </footer>
+</body>
+</html>
