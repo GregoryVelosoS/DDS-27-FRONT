@@ -1,0 +1,36 @@
+body {
+    background-color: red;
+    /* alinhamento do texto */
+    text-align: center;
+}
+
+/* ESTILIZAÇÃO VIA TAG */
+ul{
+    background-color: aqua;
+    list-style: none;
+}
+
+li{
+    /* cor de fundo */
+    background-color: black;
+    /* cor do texto */
+    color: white;
+    /* largura do elemento  */
+    width: 300px;
+    /* altura do elemento */
+    height: 50px;
+    /* tamanho da fonte */
+    font-size: 30px;
+    /* espaço do elemento pra fora */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-size: 70px;
+    color: yellow;
+    /* estilo do texto */
+    font-style: italic;
+    /* familia da fonte */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
