@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- LINK COM O CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- id - identificador único, só um elemento pode ter -->
+    <header id="topo">
+        <h1> EXEMPLOS DE TIPOS DE SELETORES </h1>
+        <p class="texto-top"> Esta pagina apresenta diferentes formas de selecionar um elemento</p>
+    </header>
+
+    <!-- SUBSTITUA AQUI -->
+    <main>
+        <section class="bloco">
+            <h2>Seletor de elemento</h2>
+            <p>Este é um parágrafo comum.</p>
+            <p>Este é outro parágrafo comum.</p>
+        </section>
+
+        <section class="bloco destaque">
+            <h2>Seletor de classe</h2>
+            <p class="texto-destaque">Este parágrafo possui uma classe específica.</p>
+        </section>
+
+        <section class="bloco">
+            <h2>Seletor de ID</h2>
+            <div id="caixa-unica">Esta caixa possui um ID único.</div>
+        </section>
+
+        <section class="bloco">
+            <h2>Seletor universal</h2>
+            <span>Exemplo com span.</span>
+        </section>
+
+        <section class="bloco">
+            <h2>Seletor descendente</h2>
+            <div class="container-desc">
+                <p>Parágrafo dentro da div.</p>
+                <section>
+                    <p>Parágrafo em nível mais profundo.</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="bloco">
+            <h2>Filho direto</h2>
+            <div class="pai-direto">
+                <p>Filho direto da div.</p>
+                <section>
+                    <p>Este p não é filho direto.</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="bloco">
+            <h2>Irmão adjacente</h2>
+            <h3>Título h3</h3>
+            <p>Parágrafo imediatamente após o h3.</p>
+            <p>Parágrafo seguinte.</p>
+        </section>
+
+        <section class="bloco">
+            <h2>Irmãos gerais</h2>
+            <h4>Subtítulo h4</h4>
+            <p>Primeiro parágrafo após o h4.</p>
+            <p>Segundo parágrafo após o h4.</p>
+            <div>Uma div entre os elementos.</div>
+            <p>Terceiro parágrafo após o h4.</p>
+        </section>
+
+        <section class="bloco">
+            <h2>Seletor de atributo</h2>
+            <input type="text" placeholder="Campo de texto">
+            <input type="password" placeholder="Campo de senha">
+        </section>
+
+        <section class="bloco">
+            <h2>Seletor de atributo com valor parcial</h2>
+            <a href="https://www.google.com">Google</a><br>
+            <a href="https://www.microsoft.com">Microsoft</a>
+        </section>
+
+        <section class="bloco">
+            <h2>Agrupamento de seletores</h2>
+            <h5>Título h5</h5>
+            <h6>Título h6</h6>
+        </section>
+
+        <section class="bloco">
+            <h2>Classe múltipla</h2>
+            <button class="botao ativo">Botão ativo</button>
+            <button class="botao">Botão comum</button>
+        </section>
+
+        <section class="bloco">
+            <h2>Elemento com classe</h2>
+            <p class="aviso">Parágrafo com classe aviso.</p>
+            <div class="aviso">Div com classe aviso.</div>
+        </section>
+
+        <section class="bloco">
+            <h2>Elemento com ID</h2>
+            <div id="painel">Painel principal</div>
+        </section>
+
+        <section class="bloco">
+            <h2>Hierarquia complexa</h2>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <!-- FIM DA SUBSTITUIÇÃO -->
+    <footer>
+        <text class="texto-top"> TODOS OS DIREITOS RESERVADOS &COPY; </text>
+    </footer>
+
+</body>
+</html>
