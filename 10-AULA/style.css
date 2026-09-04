@@ -53,3 +53,73 @@ body{
     padding: 10px;
     border: 2px solid purple;
 }
+
+/* SELECIONA TODOS OS 'p' QUE ESTÃO DENTRO DE UMA DIV  */
+div p{
+    color: blue;
+}
+
+/* SELECIONA TODOS O 'p' QUE SÃO FILHOS DIRETOS DA CLASS ESPECÍFICA */
+.pai-direto > p {
+    color: green;
+    padding: 5px;
+}
+
+/*  SELECIONA TODO O 'p' QUE VEM LOGO APÓS UM H3, DESDE QUE SEJA IRMÃO */
+h3 + p {
+    color: red;
+    font-weight: bold;
+}
+
+/* SELECIONA TODOS OS 'p' QUE VEM APÓS 0 H4, DESDE QUE SEJAM IRMÕES */
+h4 ~ p {
+    background-color: blueviolet;
+    color: yellow;
+}
+
+
+/* SELECIONA POR ATRIBUTOS ESPECÍFICOS */
+
+/* SELECIONA TODOS OS INPUTS, QUE TENHAM O TIPO TEXTO */
+input[type="text"]{
+    border: 2px solid orange;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+/* SELECIONA TODOS OS LINKS QUE TENHAM ESSE VALOR NO HREF */
+a[href*="microsoft"]{
+    color:green;
+    font-weight: bolder;
+}
+
+/* MESMO ESTILO PRA DUAS TAGS, OU MAIS */
+
+h5, h6 {
+    color: purple;
+    margin: 5px 0px;
+    font-weight: bolder;
+}
+
+/* SELECIONA O ELEMENTO QUE TEM AS DUAS CLASSES AO MESMO TEMPO */
+.botao.ativo{
+    color: red;
+    font-size: 30px;
+    padding: 50px;
+}
+
+/* SELECIONA O 'p' DESDE DE DE QUE TENHA A CLASS AVISO */
+p.aviso{
+    color: chartreuse;
+}
+
+/* SELECIONA APENAS A DIV QUE TENHA O ID PAINEL */
+div#painel{
+    background-color: red;
+    padding: 10px;
+}
+
+/* SELECIONANDO FILHO DENTRO DE FILHO */
+#menu ul li a{
+    color:violet;
+}
