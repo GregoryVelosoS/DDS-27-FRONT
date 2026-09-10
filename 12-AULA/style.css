@@ -158,3 +158,43 @@ input:disabled{
     color: gold;
     font-size: 20px;
 }
+
+/* PSEUDO ELEMENTOS */
+/* insere items ANTES dos elementos */
+h2::before{
+    content: "༼ つ ◕_◕ ༽つ ";
+    color: red;
+}
+
+/* insere items DEPOIS dos elementos */
+h2::after{
+    content: " ლ(╹◡╹ლ)";
+    color: pink;
+}
+
+/* Estiliza o texto dentro dos inputs */
+input::placeholder{
+    color: darkblue;
+    font-style: italic;
+}
+
+/* ESTILIZA O TEXTO SELECIONADO */
+::selection{
+    background: yellow;
+    color:green;
+}
+
+/* estiliza os marcadores de texto */
+/* .lista-marker li::marker{
+    color:#03f182;
+     font-size: 20px; 
+} */
+
+li::before{
+    content: " ";
+    display: inline-block;
+    background-image: url("https://www.svgrepo.com/show/508320/top.svg");
+
+    width: 10px;
+    height: 10px;
+}
