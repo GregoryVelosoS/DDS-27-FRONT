@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exemplos de Pseudo-classes e Pseudo-elementos</h1>
+        <p>
+            Esta página demonstra, na prática, o funcionamento de diferentes
+            pseudo-classes e pseudo-elementos do CSS.
+        </p>
+    </header>
+
+    <main>
+        <section class="bloco">
+            <h2>Links</h2>
+            <a > Link</a>
+            <p>
+                <a  href="https://www.google.com" target="_blank">Link externo 1</a>
+            </p>
+            <p>
+                <a href="https://www.example.com"  target="_blank">Link externo 2</a>
+            </p>
+        </section>
+
+        <section class="bloco">
+            <h2>Interação com botão</h2>
+            <button>Passe o mouse e clique</button>
+        </section>
+
+        <section class="bloco">
+            <h2>Campos de formulário</h2>
+            <form>
+                <p>
+                    <label for="nome">Nome (obrigatório):</label><br>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                </p>
+
+                <p>
+                    <label for="email">E-mail (válido):</label><br>
+                    <input type="email" id="email" name="email" placeholder="Digite um e-mail">
+                </p>
+
+                <p>
+                    <label for="idade">Idade (entre 18 e 99):</label><br>
+                    <input type="number" id="idade" name="idade" min="18" max="99" placeholder="Digite sua idade">
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" checked>
+                        Aceito os termos
+                    </label>
+                </p>
+
+                <p>
+                    <label for="campo-desabilitado">Campo desabilitado:</label><br>
+                    <input type="text" id="campo-desabilitado" disabled value="Não editável">
+                </p>
+            </form>
+        </section>
+
+        <section class="bloco">
+            <h2>Lista com posições</h2>
+            <ul class="lista-exemplo">
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+                <li>Quarto item</li>
+                <li>Quinto item</li>
+            </ul>
+        </section>
+
+        <section class="bloco">
+            <h2>Parágrafos para first-line e first-letter</h2>
+            <p class="texto-especial">
+                Este é um parágrafo criado para demonstrar o uso dos pseudo-elementos
+                first-letter e first-line. Eles permitem estilizar, respectivamente,
+                a primeira letra e a primeira linha visível do texto.
+            </p>
+        </section>
+
+        <section class="bloco">
+            <h2>Elemento vazio</h2>
+            <div class="caixa-vazia"></div>
+        </section>
+
+        <section class="bloco">
+            <h2>Lista com marcador personalizado</h2>
+            <ul class="lista-marker">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section class="bloco">
+            <h2>Exemplo com :not()</h2>
+            <div class="grupo-not">
+                <p class="ativo">Parágrafo com classe ativo</p>
+                <p>Parágrafo sem classe ativo</p>
+                <p>Outro parágrafo sem classe ativo</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+</html>
+
+
+
+
+

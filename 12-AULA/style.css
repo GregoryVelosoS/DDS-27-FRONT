@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* IMPORTAÇÃO DE FONTES DO GOOGLE */
+
+/* VIA URL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #f4f4f4;
+    margin: 20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* USANDO FONTE VIA URL */
+h1{
+    font-weight: 200;
+}
+
+h2{
+    font-weight: 600;    
+}
+/* Estilização de vários elementos ao mesmo tempo */
+h1,h2{
+    font-family: "Roboto", sans-serif;
+    color: #1f3c88;
+}
+
+/* Estilização via class */
+.bloco{
+    background-color: white;
+    border: 2px solid gray;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px ;
+    border-radius: 10px;
+}
+
+/* IMPORTAR FONTES DO PROJETO */
+@font-face {
+    font-family: "Outfit";
+    src: url("./fonts/Outfit.ttf");
+}
+
+/* USANDO A FONTE DO PROJETO */
+p{
+    font-family: "Outfit";
+    font-size: 15px;
+    color: rgba(22, 123, 238, 0.694);
+}
+
+/* PSEUDOS CLASSES */
+a{
+    color: orange;
+}
+
+/* links não visitados */
+a:link{
+    color: green;
+}
+/* links já visitados */
+a:visited{
+    color: blueviolet;
+}
+/* link que está ativo, que está clicado */
+a:active{
+    color: cyan;
+}
+/* quando passa o mouse em cima */
+a:hover{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* quando passa o mouse em cima */
+button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    transform: scale(0.3,5);
+    transition: 1s;
+}
+/* botão que está ativo, que está clicado */
+button:active{
+    transform: rotate(45deg);
+    transition: 3s;
+}
+
+/* Input quando está selecionad */
+input:focus{
+    outline: none;
+    border: 2px solid #FFDD00;
+    background-color: azure;
+}
+
+/* Input quando é obrigatório */
+input:required{
+    border: 2px solid red;
+}
+
+/* quando o preenchimento é válido */
+input:valid{
+    background-color: #03f182;
+}
+
+/* quando o preenchimento não é válido */
+input:invalid{
+    background-color: red;
+}
+/* quando o checkbox está marcado */
+input:checked{
+    accent-color: green;
+}
+/* estiliza os inputs desabilitados */
+input:disabled{
+    background-color: #e5e7eb;
+    color: #6b7280;
+}
+
+/* SELECIONA O PRIMEIRO FILHO, VULGO PRIMOGÊNITO */
+.lista-exemplo li:first-child{
+    font-weight: bold;
+    color: green;
+}
+
+/* SELECIONA O ÚLTIMO FILHO, VULGO O PREFERIDO, JOSÉ */
+.lista-exemplo li:last-child{
+    font-weight: bold;
+    height: 50px;
+    background-image: linear-gradient(red 20%, yellow, green);
+    /* background-image: linear-gradient(lightblue, lightgreen); */
+}
+
+/* SELECIONA O ÚLTIMO FILHO, VULGO O PREFERIDO, JOSÉ */
+.lista-exemplo li:nth-child(3){
+    background-color: gold;
+}
+
+/* SELECIONA ESPAÇOS SEM COONTEÚDO */
+.caixa-vazia:empty{
+    width: 200px;
+    height: 150px;
+    background-color: pink;
+}
+
+/* seleciona a primeira letra de um texto  */
+.texto-especial::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+/* seleciona a primeira linha de um texto  */
+.texto-especial::first-line{
+    color: gold;
+    font-size: 20px;
+}
