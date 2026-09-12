@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Exemplos de Display CSS</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Exemplos de Display no CSS</h1>
+
+      <p>
+        Esta página demonstra, na prática, como diferentes valores da
+        propriedade display alteram o comportamento dos elementos dentro de uma
+        página.
+      </p>
+    </header>
+
+    <main>
+      <!-- =========================================
+             DISPLAY BLOCK
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>display: block</h2>
+
+        <p>
+          Elementos com display block normalmente começam em uma nova linha e
+          ocupam a largura disponível.
+        </p>
+
+        <div class="exemplo-block">
+          <div>Elemento 1</div>
+
+          <div>Elemento 2</div>
+
+          <div>Elemento 3</div>
+        </div>
+
+        <p class="observacao">Observe como cada elemento ocupa uma linha.</p>
+      </section>
+
+      <!-- =========================================
+             DISPLAY INLINE
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>display: inline</h2>
+
+        <p>
+          Elementos inline permanecem na mesma linha e ocupam somente o espaço
+          necessário para seu conteúdo.
+        </p>
+
+        <div class="exemplo-inline">
+          <span>Elemento 1</span>
+
+          <span>Elemento 2</span>
+
+          <span>Elemento 3</span>
+        </div>
+
+        <p class="observacao">
+          Observe como os elementos permanecem na mesma linha.
+        </p>
+      </section>
+
+      <!-- =========================================
+             INLINE-BLOCK
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>display: inline-block</h2>
+
+        <p>
+          O inline-block permite que os elementos permaneçam na mesma linha, mas
+          também permite definir largura e altura.
+        </p>
+
+        <div class="exemplo-inline-block">
+          <div>Elemento 1</div>
+
+          <div>Elemento 2</div>
+
+          <div>Elemento 3</div>
+        </div>
+
+        <p class="observacao">
+          Observe que os elementos ficam lado a lado e possuem largura e altura
+          definidas.
+        </p>
+      </section>
+
+      <!-- =========================================
+             COMPARAÇÃO BLOCK / INLINE / INLINE-BLOCK
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>Comparando os três comportamentos</h2>
+
+        <p>
+          Os mesmos três elementos podem apresentar comportamentos diferentes
+          dependendo do valor de display utilizado.
+        </p>
+
+        <h3>Block</h3>
+
+        <div class="comparacao block">
+          <div>A</div>
+          <div>B</div>
+          <div>C</div>
+        </div>
+
+        <h3>Inline</h3>
+
+        <div class="comparacao inline">
+          <span>A</span>
+          <span>B</span>
+          <span>C</span>
+        </div>
+
+        <h3>Inline-block</h3>
+
+        <div class="comparacao inline-block">
+          <div>A</div>
+          <div>B</div>
+          <div>C</div>
+        </div>
+      </section>
+
+      <!-- =========================================
+             FLEX
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>display: flex</h2>
+
+        <p>
+          Quando aplicamos display flex em um elemento, seus elementos filhos
+          passam a participar de um flex container.
+        </p>
+
+        <div class="exemplo-flex">
+          <div>HTML</div>
+
+          <div>CSS</div>
+
+          <div>JavaScript</div>
+        </div>
+
+        <p class="observacao">
+          Observe que os elementos foram organizados horizontalmente.
+        </p>
+      </section>
+
+      <!-- =========================================
+             FLEX-DIRECTION
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>Flexbox: flex-direction</h2>
+
+        <p>
+          A propriedade flex-direction define a direção em que os elementos
+          filhos serão organizados.
+        </p>
+
+        <h3>flex-direction: row</h3>
+
+        <div class="flex-direction-row">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+
+        <h3>flex-direction: column</h3>
+
+        <div class="flex-direction-column">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </section>
+
+      <!-- =========================================
+             JUSTIFY CONTENT
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>Flexbox: justify-content</h2>
+
+        <p>
+          A propriedade justify-content controla a distribuição dos elementos no
+          eixo principal.
+        </p>
+
+        <h3>flex-start</h3>
+
+        <div class="justify-start">
+          <div>A</div>
+          <div>B</div>
+          <div>C</div>
+        </div>
+
+        <h3>center</h3>
+
+        <div class="justify-center">
+          <div>A</div>
+          <div>B</div>
+          <div>C</div>
+        </div>
+
+        <h3>space-between</h3>
+
+        <div class="justify-between">
+          <div>A</div>
+          <div>B</div>
+          <div>C</div>
+        </div>
+      </section>
+
+      <!-- =========================================
+             ALIGN ITEMS
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>Flexbox: align-items</h2>
+
+        <p>
+          A propriedade align-items controla o alinhamento dos elementos no eixo
+          transversal.
+        </p>
+
+        <div class="align-center">
+          <div>Pequeno</div>
+
+          <div class="grande">Grande</div>
+
+          <div>Pequeno</div>
+        </div>
+      </section>
+
+      <!-- =========================================
+             GAP
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>Flexbox: gap</h2>
+
+        <p>
+          A propriedade gap define o espaço entre os elementos de um flex
+          container.
+        </p>
+
+        <div class="gap-exemplo">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </div>
+      </section>
+
+      <!-- =========================================
+             GRID
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>display: grid</h2>
+
+        <p>O Grid permite organizar elementos utilizando linhas e colunas.</p>
+
+        <div class="exemplo-grid">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+        </div>
+
+        <p class="observacao">
+          Observe a organização dos elementos em linhas e colunas.
+        </p>
+      </section>
+
+      <!-- =========================================
+             GRID-TEMPLATE-COLUMNS
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>Grid: grid-template-columns</h2>
+
+        <p>Podemos definir quantas colunas queremos no nosso layout.</p>
+
+        <h3>2 colunas</h3>
+
+        <div class="grid-duas-colunas">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </div>
+
+        <h3>4 colunas</h3>
+
+        <div class="grid-quatro-colunas">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </div>
+      </section>
+
+      <!-- =========================================
+             DISPLAY NONE
+        ========================================== -->
+
+      <section class="bloco">
+        <h2>display: none</h2>
+
+        <p>
+          Quando utilizamos display none, o elemento deixa de participar do
+          layout e não ocupa espaço.
+        </p>
+
+        <div class="none-exemplo">
+          <div>Elemento 1</div>
+
+          <div class="elemento-oculto">Elemento 2</div>
+
+          <div>Elemento 3</div>
+        </div>
+
+        <p class="observacao">
+          O elemento 2 existe no HTML, mas não ocupa espaço porque está
+          utilizando display none.
+        </p>
+      </section>
+
+    </main>
+  </body>
+</html>
