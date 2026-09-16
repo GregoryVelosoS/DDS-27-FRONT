@@ -156,3 +156,117 @@ p{
 .none-exemplo .elemento-oculto{
     display: none;
 } 
+
+/* DISPLAY FLEX */
+.exemplo-flex{
+    display: flex;
+    background-color: var(--color-bg-box);
+    padding: 20px;
+    gap: var(--gap);
+}
+
+.exemplo-flex div {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 25px;
+    flex: 1;
+    text-align: center;
+}
+
+/* FLEX DIRECTION */
+.flex-direction-row {
+   display: flex; 
+   flex-direction: row;
+   gap: var(--gap);
+   background-color: var(--color-bg-box);
+   padding: 15px;
+}
+
+.flex-direction-row div, .flex-direction-column div{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 15px;
+    text-align: center;
+}
+
+.flex-direction-column {
+   display: flex; 
+   flex-direction: column;
+   gap: var(--gap);
+   background-color: var(--color-bg-box);
+   padding: 15px;
+}
+
+/* JUSTIFY CONTENT */
+/* Caixa internas ou os filhos */
+.justify-start div, .justify-center div, .justify-between div {
+    background-color: blue;
+    color: var(--color-white);
+    padding: 15px 25px;
+}
+
+/* Os pais */
+.justify-start, .justify-center,  .justify-between{
+    display: flex;
+    background-color: var(--color-bg-box);
+    padding: 15px;
+    margin-bottom: 15px;
+    gap: var(--gap);
+}
+
+/* alinhado ao comeco horizontalmente */
+.justify-start{
+    justify-content: start; /* start - esquerda */
+    justify-content: end;   /* end - direita */
+}
+
+/* alinhar os itens ao centro horizontalmente*/
+.justify-center{
+    justify-content: center;
+}
+
+/* dá um espaço entre os elementos horizontalmente */
+.justify-between{
+    justify-content: space-between; /* between - entre */
+    justify-content: space-around; /* around - em volta */
+}
+
+/* ALING-ITENS */
+.align-center{
+    display: flex;
+    height: 180px;
+    background-color: var(--color-bg-box);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-center div {
+    background-color: green;
+    color: var(--color-white); 
+    padding: 15px;
+}
+
+.align-center .grande {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/* GAP */
+.gap-exemplo{
+    display: flex;
+    gap: 30px;
+    background-color: var(--color-bg-box);
+    padding: 20px;
+}
+
+.gap-exemplo div{
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
