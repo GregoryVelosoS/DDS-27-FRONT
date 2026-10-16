@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- defer faz o JavaScript ser executado depois que o HTML for interpretado pelo navegador. -->
+    <script src="inputs.js" defer></script>
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="menu-container">
+        <a href="index.html" class="logo">Aula JavaScript</a>
+        <ul class="menu-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="poder.html">Inputs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <a
+        href="https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/ef448e01b6d8f8087aabd9ce6690a29c6029f998038d4917a175ccc135e31db5_1.jpg"
+        target="_blank"
+      >
+        <h1>Usando o poder do ensino superior</h1>
+      </a>
+      <h2>Capturando dados de formulários</h2>
+
+      <p>
+        A propriedade <code>value</code> permite consultar o valor digitado em
+        um campo de formulário.
+      </p>
+
+      <h3>Evento change</h3>
+
+      <label for="campoChange">Digite seu nome:</label>
+
+      <input type="text" id="campoChange" placeholder="Seu nome" value="" />
+
+      <p id="resultadoChange" class="resultado">
+        ESSE TEXTO SERÁ ALTERADO QUANDO SAIR DO INPUT
+      </p>
+
+      <h3>Evento input</h3>
+
+      <label for="campoInput">Digite qualquer texto:</label>
+
+      <input type="text" id="campoInput" placeholder="Digite aqui" />
+
+      <p id="resultadoInput" class="resultado">
+        ESSE TEXTO SERÁ ALTERADO QUANDO DIGITAR NO INPUT ACIMA
+      </p>
+    </section>
+
+    <section class="bloco">
+      <h2>Cadastrar jogador</h2>
+
+      <form id="formJogador">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" required />
+        </div>
+
+        <div>
+          <label for="camisa">Camisa:</label>
+          <input type="number" id="camisa" min="1" required />
+        </div>
+
+        <div>
+          <label for="posicao">Posição:</label>
+          <input type="text" id="posicao" required />
+        </div>
+
+        <div>
+          <label for="time">Time:</label>
+          <input type="text" id="time" required />
+        </div>
+        <button type="submit">Cadastrar jogador</button>
+      </form>
+
+      <h3>Jogadores cadastrados</h3>
+
+      <div id="listaJogadores">
+
+      </div>
+    </section>
+  </body>
+</html>

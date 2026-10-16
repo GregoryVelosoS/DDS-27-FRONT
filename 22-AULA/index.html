@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="menu-container">
+        <a href="index.html" class="logo">Aula JavaScript</a>
+
+        <ul class="menu-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="poder.html">Inputs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Conteúdo da página, com vários elementos -->
+    <section>
+      <h1>Selecionando elementos</h1>
+
+      <p>Algo aqui pra dizer que tem</p>
+      <p class="para">Mais um texto top ai</p>
+      <p class="para" id="p3">
+        O farol das estrelas
+      </p>
+
+      <h3>Transformers 4 - A era da extinção</h3>
+      <h3>Acabou</h3>
+      <h3>Olá, sou um título</h3>
+    </section>
+
+    <br />
+    <hr />
+
+    <section>
+      <h1>Ativando funções</h1>
+      <!-- Ativando função declarada internamente -->
+      <h2 onclick="console.log('Eu cliquei')">CLIQUE AQUI</h2>
+
+      <!-- Ativando função declarada no script -->
+      <h2 ondblclick="cliquei()">AQUI NÃO PODE NÃO</h2>
+
+      <!-- Ativando função declarada no script -->
+      <h2 id="btnCliqueDuplo">CLICA DUAS VEZES RAPIDÃO</h2>
+
+      <h1 id="shazam">SHAZAM</h1>
+
+      <h1 onclick="quemFoi(this)">ALO</h1>
+
+      <p onclick="quemFoi(this)">Fazendo também</p>
+    </section>
+    <br />
+    <hr />
+
+    <section>
+      <h1>Adicionado Elementos</h1>
+      
+      <h3 id="criaTexto">Clique aqui pra mudar o texto de baixo</h3>
+      <p id="textoCriado">Esse texto aqui vai mudar</p>
+
+      <h3 id="criaHtml">Clique aqui para adicionar um html abaixo</h3>
+      <div id="vazia"></div>
+
+    </section>
+
+    <br /><br /><br /><br /><br />
+    <script src="script.js"></script>
+  </body>
+</html>

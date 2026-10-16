@@ -1,0 +1,230 @@
+/* Configurações gerais */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #263238;
+  background-color: #f1f4f8;
+}
+
+/* MENU DE NAVEGAÇÃO */
+.menu {
+  background-color: #174a7e;
+  padding: 0 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.menu-container {
+  max-width: 1100px;
+  min-height: 70px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px 16px;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+
+  transition: background-color 0.2s;
+}
+
+.menu-links a:hover {
+  background-color: #28669e;
+}
+
+.menu-links a:focus-visible,
+.logo:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+/* FORM JOGADOR*/
+#formJogador{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* AJUSTE PARA TELAS PEQUENAS */
+@media (max-width: 500px) {
+  .menu {
+    padding: 12px 16px;
+  }
+
+  .menu-container {
+    justify-content: center;
+  }
+
+  .menu-links {
+    justify-content: center;
+  }
+}
+
+/* Áreas de conteúdo */
+section {
+  max-width: 900px;
+  margin: 0 auto 25px;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #dce3eb;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos */
+h1 {
+  color: #174a7e;
+  margin-top: 0;
+}
+
+h2 {
+  color: #1769aa;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5edf5;
+}
+
+h3 {
+  margin-top: 25px;
+  color: #37474f;
+}
+
+/* Textos e códigos */
+p {
+  margin: 12px 0;
+}
+
+code {
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: #edf2f7;
+  color: #8e2855;
+}
+
+/* Links */
+a {
+  color: #1769aa;
+  font-weight: bold;
+}
+
+/* Campos dos formulários */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 6px 0 15px;
+  padding: 11px;
+  font: inherit;
+  border: 1px solid #b8c5d3;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+input:focus {
+  outline: 2px solid #90caf9;
+  border-color: #1769aa;
+}
+
+/* Botões */
+button {
+  margin: 6px 5px 6px 0;
+  padding: 10px 16px;
+  font: inherit;
+  font-weight: bold;
+  color: white;
+  background-color: #1769aa;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #104d80;
+}
+
+button:focus-visible {
+  outline: 3px solid #90caf9;
+  outline-offset: 3px;
+}
+
+/* Mensagens e resultados do JavaScript */
+.resultado {
+  min-height: 45px;
+  padding: 12px;
+  background-color: #edf5fc;
+  border-left: 4px solid #1769aa;
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+
+/* Cartões dos jogadores criados pelo JavaScript */
+#listaJogadores > div {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f7f9fc;
+  border: 1px solid #dce3eb;
+  border-left: 5px solid #2e7d32;
+  border-radius: 7px;
+}
+
+#listaJogadores h4 {
+  margin: 0 0 8px;
+  color: #2e7d32;
+  font-size: 1.2rem;
+}
+
+#listaJogadores p {
+  margin: 4px 0;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  section {
+    padding: 16px;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
